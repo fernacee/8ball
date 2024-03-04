@@ -1,0 +1,19 @@
+import random
+import time
+
+#intro text
+time.sleep(1)
+print('go ahead, ask a question')
+
+#user input
+answer = input()
+
+reply_list = 'yes', 'maybe', 'not now', 'soon', 'no', 'probably not', 'its best if you dont', 'ask again later', 'definitely', 'you might rely on it', 'i think?????', 'better not tell you now', 'concentrate and ask again', 'dont count on it', 'definitely not', 'doubt it', 'isnt it obvious?', 'absolutely', 'duh'
+
+#functionality for the input and output
+if str(answer) == answer:
+    time.sleep(1)
+    answer = random.choice(reply_list)
+    print('...')
+    time.sleep(1)
+    print(answer)
